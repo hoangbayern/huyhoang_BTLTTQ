@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{731111CD-8C90-45B7-B5CD-73270FBAB880}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>finnalBTL</RootNamespace>
+    <AssemblyName>finnalBTL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCTHDBH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCTHDBH.Designer.cs">
+      <DependentUpon>frmCTHDBH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHDBH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHDBH.Designer.cs">
+      <DependentUpon>frmHDBH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHDNH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHDNH.Designer.cs">
+      <DependentUpon>frmHDNH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLKH.Designer.cs">
+      <DependentUpon>frmQLKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNCC.Designer.cs">
+      <DependentUpon>frmQLNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNV.Designer.cs">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLSP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLSP.Designer.cs">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLTK.Designer.cs">
+      <DependentUpon>frmQLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLXH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLXH.Designer.cs">
+      <DependentUpon>frmQLXH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrangChu.Designer.cs">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KetNoiDuLieu.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCTHDBH.resx">
+      <DependentUpon>frmCTHDBH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHDBH.resx">
+      <DependentUpon>frmHDBH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHDNH.resx">
+      <DependentUpon>frmHDNH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLKH.resx">
+      <DependentUpon>frmQLKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNCC.resx">
+      <DependentUpon>frmQLNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNV.resx">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLSP.resx">
+      <DependentUpon>frmQLSP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLTK.resx">
+      <DependentUpon>frmQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLXH.resx">
+      <DependentUpon>frmQLXH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrangChu.resx">
+      <DependentUpon>frmTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2254_36_2049_26_20210325-Do-you-know-their-weight-[banner-1920x1080px]%40tmp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-lock-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancel-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\logoPet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\file.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\outline_home_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\outline_group_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\outline_local_shipping_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\outline_equalizer_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\outline_dashboard_customize_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\outline_auto_stories_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\outline_post_add_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\Actions-view-refresh-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\Actions-edit-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\Pencil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\printer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\Cross-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_search_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-view-refresh-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-edit-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cross-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-view-refresh-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-edit-delete-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cross-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-edit-delete-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cross-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-document-save-icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-edit-delete-icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logos-Details-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cross-icon3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\Actions-document-save-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_home_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\outline_account_circle_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\outline_account_circle_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\outline_add_circle_outline_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hinh anh\IMAGE\icons8-input-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic-3.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
